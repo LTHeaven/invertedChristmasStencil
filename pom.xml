@@ -7,12 +7,29 @@
     <groupId>es.heavensgat</groupId>
     <artifactId>invertedChristmasStencil</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>7</source>
+                    <target>7</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 
     <dependencies>
         <dependency>
             <groupId>de.erichseifert.vectorgraphics2d</groupId>
             <artifactId>VectorGraphics2D</artifactId>
             <version>0.13</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-csv</artifactId>
+            <version>1.8</version>
         </dependency>
     </dependencies>
 </project>
